@@ -1,51 +1,360 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hannah Allen</title>
+    <meta name="description" content="Portfolio Template for Developer" />
 
-<body>
-  <h1> Hannah Grace C. Allen</h1>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHmQtHy1ekZdg/profile-displayphoto-shrink_800_800/0/1553200292643?e=1658361600&v=beta&t=5mUVkR84M3jO3ul0Ok8v6dDuXf36QDi28GgREaucERM"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/Hannah.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Hannah Allen</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
 
-  <p>Experience in working in public health in many avenues, with a specific focus on HIV program evaluation, education, sexual and reproductive health, maternal and child health, and program development and implementation. Skilled in Leadership, Data Analysis, Data Science, Data Visualization, Research, Excel, VBA, Python, Pandas, Matplotlib, Jupyter Notebook, SQL, SQLAlchemy, basic web development, Map creation, Creation of Monitoring and Evaluation Tools, Survey Development and Analysis, Program Development, and Framework Development. Strong professional with a Master of Public Health - MPH focused in International Public Health/International Health from Tulane University School of Public Health and Tropical Medicine. I'm currently an ORISE Evaluation fellow with the CDC for equitable HIV programming. I'm attending a Data Science Bootcamp with Georgia Tech to round out my analytic and technical skills.</p>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
 
-  
-  <ul>
-    <li><strong>Email:</strong> <a href="#">hannahgallen@gmail.com</a></li>
-    <li><strong>Github:</strong><a href="https://github.com/hanniecodes/"target="_blank">Github!</a></li>
-    <li><strong>linkedin:</strong><a href="https://www.linkedin.com/in/hannahgracecallen/"target="_blank">Linked in!</a></li>
-  </ul>
-  <h3>Personal Interests:</h3>
-  <table>
-    <table border="1">
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>101 Essays that Change the way you think</td>
-      <td>Fifth Element</td>
-      <td>Bully</td>
-    </tr>
-    <tr>
-      <td>Strange Library</td>
-      <td>Dune</td>
-      <td>Bioshock</td>
-    </tr>
-    <tr>
-      <td>Midnight Library</td>
-      <td>Everything Everywhere ALl at once</td>
-      <td>Smash Brothers</td>
-    </tr>
-  </table>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
 
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hi There! <br>I'm Hannah Allen</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            An analytically driven Public Health, Evaluation and Business Data Analyst who thrives on condensing high volumes of data into a usable story that explores possible trends. Expert at working independently and collaborating in team settings across multiple functions to gather information from a myriad of sources to effectively explain complex concepts to a variety of audiences. Proficient in addressing complex challenges.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/hannahgracecallen/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/hanniecodes?tab=repositories" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        
+        
+        
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I am a data analyst with 5+ years of experience in public health, research, and program monitoring and evaluation with skills in <strong> Excel, VBA, Tableau, nonSQL databases (MongoDB), SQL (PostgreSQL), Python3, SciPy, Numpy, Pandas, Matplotlib, R, HTML, CSS, JavaScript, Machine Learning and much more! </strong> Certification in Georgia Tech Data Science and Analytics. Master of Public Health with certification in Methods of Monitoring and Evaluating Public Health Programming. I enjoy leveraging diverse background and skill set to support well-developed and efficient analysis. 
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Hannah Allen</strong>
+                and I'm a <strong> Data Analyst</strong> located in
+                Atlanta, Georgia. I've done
+                <strong> remote </strong>
+                projects for agencies, consulted for startups and research projects, and collaborated
+                with talented people to create
+                <strong>digital products </strong>
+                for both business and research use.
+              </p>
+              <p class="about__content-details-para">
+                I am an excitable problem solver with a thirst for solving puzzles and the ability to venture out of the box to find patterns within large sets of structured, semi-structured, and raw data. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Feel free to
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Python3</div>
+              <div class="skills__skill">Pandas</div>
+              <div class="skills__skill">Jupyter Notebook</div>
+              <div class="skills__skill">Google Colab</div>
+              <div class="skills__skill">API Interactions</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Tableau</div>
+              <div class="skills__skill">Github</div>
+              <div class="skills__skill">MongoDb</div>
+              <div class="skills__skill">SQL(PostgreSQL)</div>
+              <div class="skills__skill">SQLAlchemy</div>
+              <div class="skills__skill">ETO</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">ETL</div>
+              <div class="skills__skill">GMaps</div>
+              <div class="skills__skill">ArchGIS /GIS online</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Enjoy exploring my projects! These projects extract, transform and load data in order to analyze, and present data visuals - from supporting and analyzing data in healthcare, finance, government, UFO sightings, human resource databases, and more.
+          </span>
+        </h2>
 
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/VBA.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project1: VBA & Wall Street Data</h3>
+              <p class="projects__row-content-desc">
+                Utilize VBA scripting to analyze real stock market data for 3 consecutive years (2018 - 2020)
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project2: Tableau</h3>
+              <p class="projects__row-content-desc">
+                The focus of this analysis is to look at Jersey City Bike Station data and explore these considerations through stations.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project3: Python-API & Vacation/Weather Data</h3>
+              <p class="projects__row-content-desc">
+                Visualized the weather of 500+ cities of varying distance from the equator to plan to plan future vacations. Utilized weather API to filter hotels with desired weather conditions and visualized those hotels on GMaps.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            I look forward to hearing from you! Please leave your contact information or reach out via Phone or Email.
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hannahgracecallen/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/hanniecodes?tab=repositories">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+             
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Hannah Allen</h4>
+            <p class="main-footer__short-desc">
+             CONTACT INFORMATION
+             <h4> PHONE: (404)-281-9727
+            <br> EMAIL: Hannahgallen@gmail.com</h4>
+            </p>
+          </div>
+        </div>
 
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
 
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
