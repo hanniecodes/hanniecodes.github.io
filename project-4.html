@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study of Project 1</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/Hannah.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Hannah Allen</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Predicting UFO Sightings</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            U In 2021, the US Department of Defense acknowledged the legitimacy of leaked UAP videos. Since then, the UFO community has come to the fore-front of the public eye and was the impetus for this analysis in predicting future UFO sightings.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="http://predictingufos-env.eba-c2eezvmr.us-east-1.elasticbeanstalk.com/" class="btn btn--bg" target="_blank">Live Link</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/ufo.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+               <b>Data Sources</b>
+               <br>
+                We used four datasets for this analysis- datasets 1-2 contain UFO sighting data while datasets 3-4 contain data for the features used in our machine learning algorithm:
+                <br>
+                  Nuforc- National UFO Research Center collects and serves over 100,000 reports of UFO sightings <a href="https://www.kaggle.com/datasets/sadeghjalalian/ufo-sightings-in-usa" target="_blank"><u>LINK</u></a>
+                  <br>
+                  UFO dataset from Medium.com- dataset that contains UFO sightings of the last century in the USA and the rest of the world  <a href="https://github.com/cosmoduende/r-ufo-sightings" target="_blank"><u>LINK</u></a>
+                  <br>
+                  Historical State Population- combination of individual files published by the Federal Reserve Bank of St. Louis that each contain annual population numbers for all 50 states & DC from 1900-2017<a href="https://www.kaggle.com/datasets/hassenmorad/historical-state-populations-19002017" target="_blank"><u>LINK</u></a>
+                  <br>
+                  Computational Power- dataset of change in supercomputer computational power from 1990-2021 <a href="https://ourworldindata.org/technological-change" target="_blank"><u>LINK</u></a>
+              </p>
+              <p class="project-details__desc-para">
+               <strong class="project-details__desc"> ETL</strong>
+               <br>
+                Extract: we pulled and downloaded our datasets from Kaggle and Github repos and loaded to a jupyter notebook.
+                <br>
+                Transform: after loading our datasets, we cleaned the first two containing UFO sighting data by dropping null/NaN values and duplicates. We also dropped Hoax and duration data as the intake/input of this data was inconsistent and could not be cleaned in a reasonable time to be used for analysis. Once cleaned, we merged the two UFO sighting datasets by concatenating the two data frames and completing an inner join.
+                <br>
+                Load: because the final csv was so large, we stored it in an S3 bucket on AWS and used PySpark in Google Colab to pull for future analysis. (https://ufodatagt.s3.amazonaws.com/Complete_UFO_data+(7).csv)
+              </p>
+              <p class="project-details__desc-para">
+                <b>Machine Learning</b>
+                <br>
+                Goal: The goal of our analysis was to predict the number of UFO sightings in the next 80 or so years until 2100 for two dimensions:
+                <i>the current top 5 states for UFO sightings & the current top 5 reported UFO shapes.</i>,
+                <br>
+                We identifed the top 5 states and shapes for UFO sightings from our cleaned dataset using the value_counts method and created the dataframe to use for machine learning by apply a binary coding system to our data set that indicated whether a sighing was in one of the top 5 identified states or shapes. We then applied the groupby method to the binary coded dataframe to count the number of sightings in the top states and shapes each year we had data for.
+              </p>
+              <p class="project-details__desc-para">
+               <b>Method:</b> 
+                <br>
+                We used Supervised Learning, specifically linear regression, to determine which of our two features would be better at predicting UFO sightings- population or supercomputer computational power.
+                Our hypothesis was that supercomputer computatinoal power would be a better indicator of UFO sightings and would lead to a more accurate machine learning algorithm.
+                With the train_test_split and LinearRegression dependecnices from the sklearn library, we actually found the opposite- population had a higher training and test score than computational power, indicating it would be a better predictor of future UFO sightings.
+                Thus, because our regression analysis found population to be a better indicator, we used a population growth rate of 0.01% per year, defined a function to spit out the number of sightings in the next 80 years into a dataframe and then plotted that dataframe using Tableau.
+                <br>
+                <i>*Note: Google estimates future population growth to be around 0.03% but the logrithmic factor inherent in this number created problems in our function, thus we used a smaller growth factor of 0.01%.
+                </i>
+              </p>
+              <p class="project-details__desc-para">
+                <b>Conclusions and Predictions</b>
+                <br>
+                <u>Conclusions:</u>
+                <br>
+                Population growth is a better indicator of UFO sightings than computational power.Caution: It is not surprising that population size/growth is related to number of UFO sightings, simply because more people means more people to report sightings. Perhaps this features should be combined with additional features in an unsupervised model for future analysis.However, both population growth and computational power had low test scores from the linear regression, indicating perhaps better, more related features exist.
+                <br>
+                <u>Predictions:</u>
+                <br>
+                Using a population growth rate of 0.01% per year, we see a proportional increase in UFO sightings in each state and in each shape regardless of location. (Our Tableau charts show this general upward trend for the current top 5 states and shapes, but we predict the same trend would apply to other states and shapes where/for there are current sightings).
+                Based on the 0.01% population growth rate, by 2100, we predict:
+                5,000 UFO sightings will be reported in California, the state with the highest reported sightings
+                10,000 UFO sightings will be reported in the shape, Light, the shape with the highest reported sightings
+              </p>
+              <p class="project-details__desc-para">
+              <b>Limitations + Further Considerations</b>
+              <br>
+
+                <u>Limitations:</u>
+                <br>
+                Data cleanup- a lot of data in the original datasets were comments or sighting notes from those who saw the UFO and thus could not easily be cleaned<br>
+                Data inconsistencies- different datasets had different column headers and looked at different data- this meant we had to drop a lot of columns that could have been helpful for predictions<br>
+                Lack of additional features/indicators for our linear regression model limited accuracy in predictions<br>
+                More time<br>
+
+                <u>Future Considerations:</u>
+                <br>
+                Use different models for increased accuracy in predictions- Time-Series Analysis in ML<br>
+                Find additional, related features to increase accuracy<br>
+                Analysis of recently released documents of the government<br>
+                If more time, consider further Questions: What % of future UFO sightings would be in a specific city or during a selected month?<br>
+                Leverage advanced ML to filter out obvious hoaxes
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Python3</div>
+                <div class="skills__skill">Google Colab</div>
+                <div class="skills__skill">Tableau</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Bootstrap</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="http://predictingufos-env.eba-c2eezvmr.us-east-1.elasticbeanstalk.com/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Live Link</a
+              >
+              <a
+                href="https://github.com/CBPher24/Predicting_UFOs"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hannahgracecallen/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/hanniecodes?tab=repositories">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Hannah Allen</h4>
+            <p class="main-footer__short-desc">
+             CONTACT INFORMATION
+             <h4> PHONE: (404)-281-9727
+            <br> EMAIL: Hannahgallen@gmail.com</h4>
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
