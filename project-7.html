@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Case Study of Project 1</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/Hannah.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Hannah Allen</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary"> World Happiness Data Analysis</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Analyzed World Happiness Datasets from 2015-2022, completed linear regressions to attempt to answer if weather, alcohol consumption, life expectancy and income impacts Happiness Scores.(Team Project)
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://github.com/CBPher24/Exploring-World-Happiness" class="btn btn--bg" target="_blank">Live Link</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/world_happiness_map.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                We utilized GMaps to create a choropleth map that observes happiness over time. Generally, all countries represented in our dataset have declined in happiness, shown by a country's color getting darker over time. A marked difference in color was observed in 2020, likely attributable to the COVID-10 pandemic. A notable country to observe on the map is Canada, whose rank dropped from the top five to below 10 over our time frame (2015-2022).We also created a line plot of average happiness over time. Interestingly, although the general impression from the choropleth map is that countries get less happy over time, an analysis of average happiness shows that world happiness actually increases over time, with only a slight decline recently in 2021. Specifically, average happiness rose from 5.525 in 2015 to 5.675 in 2020 and continued to rise to 5.700 in 2021. It has since declined to 5.675 this year.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Our Study Questions:</strong>
+                <br>
+                <u>Question 1:Are countries with higher average incomes happier?</u> 
+                <br>
+                There is a strong positive correlation between average income and happiness (r-square value of 0.698): as income rises, happiness scores increase from close to 3 points to between 7 and 8 points. The top five highest average income countries (Switzerland, The USA, Norway, Canada, and Australia) all had happiness scores close to or above 7 points. The countries with the lowest average income (Togo, Mozambique, Mali, Uzbekistan, and Malawi) generally all had scores between 4 and 5 points, with the exception of Uzbekistan whose happiness score was closer to 6 points. Outside factors potentially impacting average income and leading to Uzbekistan as an exception could be economic growth, inflation, population growth, etc.
+                <br>
+                <u>Question 2: Does the weather of a country (avg. sunshine) influence happiness?</u>
+                <br>
+                There is a weak negative correlation between average sunshine hours per year and happiness (r-square value of 0.294): as the number of sunshine hours per year increases, happiness scores appear to decrease. This relationship is supported in our bar plot showing the happiness scores of the top five sunniest countries (Namibia, Egypt, Cyprus, Israel, and Algeria) vs. the top five least sunny countries (Belgium, United Kingdom, Ireland, Norway, and Iceland). The least sunny countries all had happiness scores between 7 and 8 points. Three out of the top five sunniest countries had happiness scores below average happiness, while the remaining two were just slightly above. Outside factors potentially impacting a country's weather and leading to our two exception countries could be cloudiness, humidity, rainfall, temperature, etc.
+                <br>
+                <u>Question 3: Are countries with longer life expectancies happier?</u>
+                <br>
+                There is a positive correlation between average life expectancy and happiness (r-square value of 0.608): as life expectancy increases, happiness scores generally increase. This relationship is also visible in our bar chart showing the top five countries with the highest life expectancy (Japan, Korea, Switzerland, Cyprus, and Israel) and the bottom five countries with the lowest life expectancy (Zambia, Nigeria, Guinea, Zimbabwe, and Mozambique). The countries with the highest life expectancy all scored above average happiness, between 6 and 7.5 points. The countries with the lowest life expectancy scores all scored well below average happiness, between 3 and 5 points. Outside factors potentially impacting a country's average life expectancy and that may explain some of the variation in our scatter plot is country population, pollution levels, access to healthcare, violence rates, and war.
+                <br>
+                <u>Question 4: Does alcohol consumption influence happiness?</u>
+                <br>
+                There is a very weak positive correlation between alcohol consumption per year and happiness score (r-square value of 0.309): it is hard to say that as alcohol consumption increases, happiness also increases. There is a general upward trend in happiness scores for countries that reported higher alcohol consumption per year, however, there is significant variation. In our bar plot, we compared the happiness scores of the heaviest drinking countries (Latvia, Moldova, Germany, Lithuania, and Ireland) to the least heavy drinking countries (Morocco, Iraq, Pakistan, Egypt, and Bangladesh. While the bar plot shows that all heavy drinking countries are above average happiness and all least heavy drinking countries are below average happiness, there are outside factors that may impact a country's average alcohol consumption not considered in our dataset, including religious reasons or society acceptance.
+                <br>
+                <br>
+                <strong> Conclusions + Analysis Limitations:</strong>
+                <br>
+                In reviewing the four happiness indicators we selected, average income and life expectancy had the highest r-square values (and thus the least varition with happiness), indicating the strongest relationship with happiness. Between average income and life expectancy, average income had the highest r-square and the least variation, thus we would conclude that, of the happiness indicators we selected, average income is the best indicator of happiness. However, one limitation of our analysis is that without the ability to conduct a multiple regression, we were not able to statistically prove that average income is the best indicator of happiness. Thus, we relied on r-square values to come to our final conclusion.
+                <br>
+                <br>
+                <b>Additional limitations of our analysis:</b>
+                <br>
+                The World Happiness Report dataset only comes from countries willing to participate.<br>
+                We were unable to code the GMaps to to be interactive to cycle through the years.<br>
+                In our attempt to compare happiness to weather, it was difficult to find a complete historical dataset to incorporate all weather factors that can affect mood (rainfall, cloudiness, temperature (historical weather APIs cost money), etc.)<br>
+                Lack of datasets that could look further into the impact of corruption.
+                Lack of datasets having the same variables to further make comparisons: (ex. Male vs. Female)<br>
+                <br>
+                <strong>Further Considerations:</strong>
+                <br>
+                Research other happiness indicators: Job satisfaction, Population density, Rural vs. Urban living, Loneliness, Disease burden, Education level , Type of Government.
+                
+                Compare: Cost of living to happiness; Healthy habits to life expectancy, then to happiness; Other weather factors to happiness, Social drinking vs. Problem drinking to happiness.
+                <br>
+                <br>
+                <strong> Datasets Used:</strong>
+                <br>
+                World happiness dataset 2022: https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2022
+                <br>
+                World happiness dataset 2015-2022: https://www.kaggle.com/datasets/mathurinache/world-happiness-report?select=2017.csv
+                <br>
+                Median Income by Country: https://worldpopulationreview.com/country-rankings/median-income-by-country
+                Sunshine Hours: https://www.kaggle.com/datasets/prasertk/sunshine-duration-by-city
+                <br>
+                Alcohol Consumption by Country: https://worldpopulationreview.com/country-rankings/alcohol-consumption-by-country
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">SQL</div>
+                <div class="skills__skill">SQLAlchemy</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">Pandas</div>
+                <div class="skills__skill">Jupyter Notebook</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="https://github.com/CBPher24/Exploring-World-Happiness.git"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Live Link</a
+              >
+              <a
+                href="https://github.com/CBPher24/Exploring-World-Happiness/tree/main/MainWork"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hannahgracecallen/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/hanniecodes?tab=repositories">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Hannah Allen</h4>
+            <p class="main-footer__short-desc">
+             CONTACT INFORMATION
+             <h4> PHONE: (404)-281-9727
+            <br> EMAIL: Hannahgallen@gmail.com</h4>
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
