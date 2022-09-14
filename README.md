@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+ # Hannah Allen Data Analyst & Scientist Portfolio
 
-You can use the [editor on GitHub](https://github.com/hanniecodes/hanniecodes.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## **Introduction**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+An analytically driven Public Health, Evaluation and Business Data Analyst who thrives on condensing high volumes of data into a usable story that explores possible trends. Expert at working independently and collaborating in team settings across multiple functions to gather information from a myriad of sources to effectively explain complex concepts to a variety of audiences. Proficient in addressing complex challenges.
 
-### Markdown
+### <font color='magenta'>**About Me**</font>
+I am a data analyst with 5+ years of experience in public health, research, and program monitoring and evaluation with skills in Excel, VBA, Tableau, nonSQL databases (MongoDB), SQL (PostgreSQL), Python3, SciPy, Numpy, Pandas, Matplotlib, R, HTML, CSS, JavaScript, Machine Learning and much more! Certification in Georgia Tech Data Science and Analytics. Master of Public Health with certification in Methods of Monitoring and Evaluating Public Health Programming. I enjoy leveraging diverse background and skill set to support well-developed and efficient analysis.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### <font color='magenta'>**Get to Know Me**</font>
 
-```markdown
-Syntax highlighted code block
+I've done remote projects for agencies, consulted for startups and research projects, and collaborated with talented people to create digital products for both business and research use.
 
-# Header 1
-## Header 2
-### Header 3
+### <font color='magenta'>**Skills**</font>
 
-- Bulleted
-- List
+- HTML
+- CSS
+- JavaScript
+- Python
+- API
+- JSON
+- MS Excel
+- MS VBA
+- GIT
+- Github
+- MongoDB
+- Tableau
+- R
+- SQL(PostgreSQL)
+- SQLAlchemy
+- PowerBI
+- Google Colab
+- Amazon AWS Databases
+- Pandas
+- Jupyter Notebook
+- Flask
 
-1. Numbered
-2. List
+## <font color='magenta'>Projects</font>
 
-**Bold** and _Italic_ and `Code` text
+Please review **[Portfolio](https://hanniecodes.github.io/)** to see projects and details. 
 
-[Link](url) and ![Image](src)
-```
+## <font color='magenta'>Social Media</font>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- [LinkedIn](https://www.linkedin.com/in/hannahgracecallen/)
+- [Github](https://github.com/hanniecodes?tab=repositories)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hanniecodes/hanniecodes.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
