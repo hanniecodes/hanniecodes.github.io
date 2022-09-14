@@ -37,7 +37,7 @@ I've done remote projects for agencies, consulted for startups and research proj
 
 ## <font color='magenta'>Projects</font>
 
-Please review **[Portfolio](https://hanniecodes.github.io/)** to see projects and details. 
+See my **[Portfolio here](https://hanniecodes.github.io/)** to see projects and details. 
 
 ## <font color='magenta'>Social Media</font>
 
